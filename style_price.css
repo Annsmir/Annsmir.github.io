@@ -1,0 +1,118 @@
+#list_offers {
+    background-color: white;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.image { 
+    position: relative;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    color: white;
+    font-family: 'Quicksand' sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    text-shadow: 10px 10px 20px black;
+    background-color: rgb(255, 203, 229);;
+    opacity: 0,2;
+    border-radius: 50%;
+    border: solid 10px pink;
+    transition: 0.4s;
+}
+
+.image__description {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.offer_mini {
+    display: none;
+}
+
+.warning {
+    margin: 20px;
+    color: rgb(47, 47, 47);
+    background-color: white;
+    border: dotted 5px rgb(255, 203, 229);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1095px){
+    .offer {
+        display: none;
+    }
+    .offer_mini{ 
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+        align-items: center;
+        font-size: 20px;
+        font-family: Impact;
+        color: rgb(116, 116, 116);
+    }
+
+    .offer_mini a {
+        text-decoration: none;
+        color:rgb(116, 116, 116)
+    }
+}
+
+.tables {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: dashed 2px rgb(139, 139, 139);
+    max-width: auto;
+    font-size: 20px;;
+}
+
+td {
+    border-top: solid 1px rgb(139, 139, 139);
+    width: 600px;
+}
+
+th, td, tr {
+    padding: 10px;
+}
+
+#manik, #pe, #hair, #cos, #make { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

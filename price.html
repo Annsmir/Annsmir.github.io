@@ -1,0 +1,623 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_price.css">
+    <link rel="icon" href="favicon.ico"/>
+    <title>Салон красоты Michèle</title>
+</head>
+<body style = "background-color: rgb(255, 203, 229);">
+        <header id = "header" class = "main_header">
+            <div class ="center">
+                <div id = "phrase"><a href = "index.html" id = "title"><img src="image3.png" style="max-width: 100%;"></a></div>
+           <nav id="main_nav">
+                <ul>
+                    <li><a id="navi" href="price.html">Услуги</a></li>
+                    <li><a id="navi" href="studio.html">Наши студии</a></li>
+                    <li><a id="navi" href="team.html">Наша команда</a></li>
+                    <li><a id="navi" href="appointment.html">Запись on-line</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+
+        <div id="sidebar">
+          <div class="toggle-btn" onclick="openMenu()">
+              <div class="span_s">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+              <div style="writing-mode: vertical-lr; font-size: 40px; font-family: Monotype Corsiva; margin-top: 20px; color: rgb(73, 73, 73)">Меню</div>
+          </div>
+          <ul>
+              <li><a href="price.html">Услуги</a></li>
+              <li><a href="studio.html">Наши студии</a></li>
+              <li><a href="team.html">Наша команда</a></li>
+              <li><a href="appointment.html">Запись on-line</a></li>
+          </ul>
+      </div>
+
+        <main>
+            <div class="price">
+            <div class="pink"style="padding: 0; border: none; margin-top: 10px; margin-bottom: 10px">
+                <div style="padding: 10px; border: none; display: flex; align-items: center; justify-content: flex-start;">
+                    <img src="white_circle.png ">
+                </div>
+                <div style="padding: 10px; border: none; display: flex; align-items: center; justify-content: center;">
+                    <h2 style="color: rgb(255, 255, 255); text-shadow: 1px 0px 1px rgb(0, 0, 0); font-size: 45px; text-align: center; font-family: Monotype Corsiva;">Наши услуги и прайс</h2>
+                </div>
+                <div style="padding: 10px; border: none; display: flex; align-items: center; justify-content: flex-end;">
+                    <img src="white_circle_right.png">
+                </div>
+            </div>
+            </div>
+                <section id = "list_offers">
+                    <div class="offer">
+                        <div class="image">
+                            <img class ="image__img" src="imgs/nails.png" style="max-width: 240px; max-height: 240px;">
+                            <a href="#manik"><div class ="image__overlay">
+                                <p class="image__description">
+                                    Ногтевой сервис
+                                </p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="image">
+                            <img class ="image__img" src="imgs/hair.png" style="max-width: 240px; max-height: 240px;">
+                            <a href="#hair"><div class ="image__overlay">
+                                <p class="image__description">
+                                    Парикмахерские <br> услуги
+                                </p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="image">
+                            <img class ="image__img" src="imgs/cosmo.png" style="max-width: 240px; max-height: 240px;">
+                            <a href="#cos"><div class ="image__overlay">
+                                <p class="image__description">
+                                    Косметология
+                                </p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="image">
+                            <img class ="image__img" src="imgs/makeup.png" style="max-width: 240px; max-height: 240px;">
+                            <a href="#make"><div class ="image__overlay">
+                                <p class="image__description">
+                                    Макияж
+                                </p>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="offer_mini">
+                        <a href="#manik">Ногтевой сервис</a>
+                        <a href="#hair">Парикмахерские услуги</a>
+                        <a href="#cos">Косметология</a>
+                        <a href="#make">Макияж</a>
+                    </div>
+                    <div class="warning">
+                        Обращаем Ваше внимание на то, что некоторые виды услуг могут быть недоступны в выбранной студии! Для уточнения возможности оказания интересующей Вас услуги обратитись к разделу <a href="studio.html" style="text-decoration: none; color: rgb(47, 47,47)">"Студии"</a>.
+                    </div>
+                </section>
+                <div class="tables">
+
+                <div id="manik">
+                    <div style="color: rgb(255, 255, 255); text-shadow: 1px 0px 1px rgb(0, 0, 0); font-size: 45px; text-align: center; font-family: Monotype Corsiva; padding: 10px;">Маникюр</div>
+                    <table>
+                    <colgroup>
+                      <col span="1" style="background:white">
+                      <col style="background-color:rgb(255, 234, 245)">
+                    </colgroup>
+                    <tr>
+                      <th>Наименование услуги</th>
+                      <th>Цена, руб.</th>
+                    </tr>
+                    <tr>
+                      <td>Снятие лака</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <td>Маникюр без покрытия</td>
+                      <td>999</td>
+                    </tr>
+                    <tr>
+                      <td>Маникюр + Гель-лак «Luxio»</td>
+                      <td>2499</td>
+                    </tr>
+                    <tr>
+                      <td>Маникюр + Гель-лак «Rock Nail»</td>
+                      <td>2399</td>
+                    </tr>
+                    <tr>
+                      <td>Маникюр + «База+топ»</td>
+                      <td>1599</td>
+                    </tr>
+                    <tr>
+                      <td>Покрытие гель-лак «Luxio»</td>
+                      <td>1600</td>
+                    </tr>
+                    <tr>
+                      <td>Покрытие гель-лак «Rock Nail»</td>
+                      <td>1500</td>
+                    </tr>
+                    <tr>
+                      <td>Дизайн френч, лунки</td>
+                      <td>400</td>
+                    </tr>
+                    <tr>
+                      <td>Дизайн наклейка-слайдер</td>
+                      <td>400</td>
+                    </tr>
+                    <tr>
+                      <td>Дизайн фольга, втирка, мрамор, стемпинг</td>
+                      <td>800</td>
+                    </tr>
+                    <tr>
+                      <td>Другой дизайн</td>
+                      <td>999-1499</td>
+                    </tr>
+                    <tr>
+                      <td>Выравнивание базой</td>
+                      <td>600</td>
+                    </tr>
+                    <tr>
+                      <td>Укрепление акрилом</td>
+                      <td>700</td>
+                    </tr>
+                    <tr>
+                      <td>Лечебное покрытие IBX</td>
+                      <td>1000</td>
+                    </tr>
+                    <tr>
+                      <td>Парафинотерапия</td>
+                      <td>1000</td>
+                    </tr>
+                    <tr>
+                      <td>SPA-процедура</td>
+                      <td>1099</td>
+                    </tr>
+                    <tr>
+                      <td>Форма ногтей</td>
+                      <td>600</td>
+                    </tr>
+                    <tr>
+                      <td>Полировка ногтей</td>
+                      <td>600</td>
+                    </tr>
+                    <tr>
+                      <td>Матовое покрытие</td>
+                      <td>600</td>
+                    </tr>
+                    <tr>
+                      <td>Ремонт ногтя</td>
+                      <td>400</td>
+                    </tr>
+                    <tr>
+                      <td>Наращивание ногтей на формах</td>
+                      <td>1600</td>
+                    </tr>
+                    <tr>
+                      <td>Коррекция наращенных ногтей</td>
+                      <td>1400</td>
+                    </tr>
+                    <tr>
+                      <td>Снятие наращенных ногтей</td>
+                      <td>1000</td>
+                    </tr>
+                    </table>
+                </div>
+                    
+                <div id="pe">
+                    <div style="color: rgb(255, 255, 255); text-shadow: 1px 0px 1px rgb(0, 0, 0); font-size: 45px; text-align: center; font-family: Monotype Corsiva; padding: 10px;">Педикюр</div>
+                    <table>
+                    <colgroup>
+                      <col span="1" style="background:white">
+                      <col style="background-color:rgb(255, 234, 245)">
+                    </colgroup>
+                    <tr>
+                      <th>Наименование услуги</th>
+                      <th>Цена, руб.</th>
+                    </tr>
+                    <tr>
+                      <td>Снятие лака</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <td>Педикюр без покрытия</td>
+                      <td>1099</td>
+                    </tr>
+                    <tr>
+                      <td>Педикюр + Гель-лак «Luxio»</td>
+                      <td>2499</td>
+                    </tr>
+                    <tr>
+                      <td>Педикюр + Гель-лак «Rock Nail»</td>
+                      <td>2399</td>
+                    </tr>
+                    <tr>
+                      <td>Экспресс педикюр</td>
+                      <td>1800</td>
+                    </tr>
+                    <tr>
+                      <td>SMART-педикюр</td>
+                      <td>1999</td>
+                    </tr>
+                    <tr>
+                      <td>Покрытие гель-лак «Luxio»</td>
+                      <td>1600</td>
+                    </tr>
+                    <tr>
+                      <td>Покрытие гель-лак «Rock Nail»</td>
+                      <td>1500</td>
+                    </tr>
+                    <tr>
+                      <td>Укрепление акрилом</td>
+                      <td>1600</td>
+                    </tr>
+                    <tr>
+                      <td>Лечебное покрытие IBX</td>
+                      <td>1749</td>
+                    </tr>
+                    <tr>
+                      <td>Парафинотерапия</td>
+                      <td>1899</td>
+                    </tr>
+                    <tr>
+                      <td>SPA-процедура</td>
+                      <td>1999</td>
+                    </tr>
+                    <tr>
+                      <td>Форма ногтей</td>
+                      <td>800</td>
+                    </tr>
+                    <tr>
+                      <td>Ремонт ногтя</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <td>Дизайн</td>
+                      <td>600</td>
+                    </tr>
+                    <tr>
+                      <td>Матовый топ</td>
+                      <td>600</td>
+                    </tr>
+                    <tr>
+                      <td>Полировка ногтей</td>
+                      <td>799</td>
+                    </tr>
+                    <tr>
+                      <td>Обычное прозрачное покрытие</td>
+                      <td>999</td>
+                    </tr>
+                    </table>
+                </div>
+
+                <div id="hair">
+                    <div style="color: rgb(255, 255, 255); text-shadow: 1px 0px 1px rgb(0, 0, 0); font-size: 45px; text-align: center; font-family: Monotype Corsiva; padding: 10px; ">Парикмахерские услуги</div>
+                    <table>
+                    <colgroup>
+                      <col span="1" style="background:white">
+                      <col style="background-color:rgb(255, 234, 245)">
+                    </colgroup>
+                    <tr>
+                      <th>Наименование услуги</th>
+                      <th>Цена, руб.</th>
+                    </tr>
+                    <tr>
+                      <td>Укладка</td>
+                      <td>1499</td>
+                    </tr>
+                    <tr>
+                      <td>Прическа</td>
+                      <td>1999</td>
+                    </tr>
+                    <tr>
+                      <td>Мытье головы</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <td>Сложное окрашивание</td>
+                      <td>3399</td>
+                    </tr>
+                    <tr>
+                      <td>Стойкое окрашивание. Короткие волосы или корни</td>
+                      <td>2899</td>
+                    </tr>
+                    <tr>
+                      <td>Стойкое окрашивание. Средние волосы</td>
+                      <td>3349</td>
+                    </tr>
+                    <tr>
+                      <td>Стойкое окрашивание. Длинные волосы</td>
+                      <td>3999</td>
+                    </tr>
+                    <tr>
+                      <td>Стрижка женская</td>
+                      <td>1499</td>
+                    </tr>
+                    <tr>
+                      <td>Стрижка мужская</td>
+                      <td>1999</td>
+                    </tr>
+                    <tr>
+                      <td>Стрижка прядей (чёлка)</td>
+                      <td>1199</td>
+                    </tr>
+                    <tr>
+                      <td>Моделирование бороды</td>
+                      <td>1799</td>
+                    </tr>
+                    <tr>
+                      <td>Бритьё опасной бритвой</td>
+                      <td>1899</td>
+                    </tr>
+                    <tr>
+                      <td>Удаление волос воском</td>
+                      <td>1199</td>
+                    </tr>
+                    <tr>
+                      <td>Botox для волос</td>
+                      <td>2199</td>
+                    </tr>
+                    <tr>
+                      <td>Маска-филлер</td>
+                      <td>1499</td>
+                    </tr>
+                    <tr>
+                      <td>Филлер БИО-стайлинг</td>
+                      <td>1799</td>
+                    </tr>
+                    <tr>
+                      <td>Наращивание</td>
+                      <td>3500</td>
+                    </tr>
+                    <tr>
+                      <td>Снятие наращенных волос</td>
+                      <td>3800</td>
+                    </tr>
+                    </table>
+                </div>
+
+                <div id="cos">
+                    <div style="color: rgb(255, 255, 255); text-shadow: 1px 0px 1px rgb(0, 0, 0); font-size: 45px; text-align: center; font-family: Monotype Corsiva; padding: 10px; ">Косметология</div>
+                    <table>
+                    <colgroup>
+                      <col span="1" style="background:white">
+                      <col style="background-color:rgb(255, 234, 245)">
+                    </colgroup>
+                    <tr>
+                      <th>Наименование услуги</th>
+                      <th>Цена, руб.</th>
+                    </tr>
+                    <tr>
+                      <td>Консультация</td>
+                      <td>4999</td>
+                    </tr>
+                    <tr>
+                      <td>Прокол 1 уха</td>
+                      <td>1200</td>
+                    </tr>
+                    <tr>
+                      <td>Удаление жировиков аппаратом</td>
+                      <td>10199</td>
+                    </tr>
+                    <tr>
+                      <td>Массаж</td>
+                      <td>5999</td>
+                    </tr>
+                    <tr>
+                      <td>Удаление новообразований 1 шт</td>
+                      <td>12999</td>
+                    </tr>
+                    <tr>
+                      <td>Биоревитализация</td>
+                      <td>10000</td>
+                    </tr>
+                    <tr>
+                      <td>Комплексная мезотерапия НИТИЯ</td>
+                      <td>15000</td>
+                    </tr>
+                    <tr>
+                      <td>Ботокс для лица 1 ед</td>
+                      <td>7999</td>
+                    </tr>
+                    <tr>
+                      <td>Ксеомин для лица 1 ед</td>
+                      <td>7999</td>
+                    </tr>
+                    <tr>
+                      <td>Диспорт ладони 1 ед</td>
+                      <td>8999</td>
+                    </tr>
+                    <tr>
+                      <td>Диспорт лицо</td>
+                      <td>9999</td>
+                    </tr>
+                    <tr>
+                      <td>Диспорт стопы 1 ед</td>
+                      <td>7999</td>
+                    </tr>
+                    <tr>
+                      <td>Липолитические программы лицо/тело</td>
+                      <td>18999</td>
+                    </tr>
+                    <tr>
+                      <td>Нити</td>
+                      <td>9999</td>
+                    </tr>
+                    <tr>
+                      <td>Коллост</td>
+                      <td>13999</td>
+                    </tr>
+                    <tr>
+                      <td>Контурная пластика</td>
+                      <td>25000</td>
+                    </tr>
+                    <tr>
+                      <td>Плазмолифтинг</td>
+                      <td>19999</td>
+                    </tr>
+                    <tr>
+                      <td>Ринопластика безоперационная</td>
+                      <td>39999</td>
+                    </tr>
+                    <tr>
+                      <td>Лечение акне/постакне</td>
+                      <td>15999</td>
+                    </tr>
+                    <tr>
+                      <td>Лечение розацеа</td>
+                      <td>23999</td>
+                    </tr>
+                    <tr>
+                      <td>Ультразвуковой SMAS-лифтинг лицо</td>
+                      <td>39999</td>
+                    </tr>
+                    <tr>
+                      <td>Ультразвуковой SMAS-лифтинг тело</td>
+                      <td>49999</td>
+                    </tr>
+                    <tr>
+                      <td>Аппаратная косметология BIOGENIE</td>
+                      <td>47949</td>
+                    </tr>
+                    <tr>
+                      <td>Аппаратная косметология Дермапен</td>
+                      <td>45999</td>
+                    </tr>
+                    <tr>
+                      <td>Лазерная эпиляция Candela Lase Pro-U</td>
+                      <td>55999</td>
+                    </tr>
+                    <tr>
+                      <td>Шугаринг (Эпиляция)</td>
+                      <td>8999</td>
+                    </tr>
+                    <tr>
+                      <td>Фотолечение пигментации</td>
+                      <td>39999</td>
+                    </tr>
+                    </table>
+                </div>
+
+                <div id="make">
+                    <div style="color: rgb(255, 255, 255); text-shadow: 1px 0px 1px rgb(0, 0, 0); font-size: 45px; text-align: center; font-family: Monotype Corsiva; padding: 10px; ">Макияж</div>
+                    <table>
+                    <colgroup>
+                      <col span="1" style="background:white">
+                      <col style="background-color:rgb(255, 234, 245)">
+                    </colgroup>
+                    <tr>
+                      <th>Наименование услуги</th>
+                      <th>Цена, руб.</th>
+                    </tr>
+                    <tr>
+                      <td>Макияж</td>
+                      <td>11500</td>
+                    </tr>
+                    <tr>
+                      <td>Коррекция макияжа</td>
+                      <td>6700</td>
+                    </tr>
+                    <tr>
+                      <td>Наклеивание ресниц</td>
+                      <td>3499</td>
+                    </tr>
+                    <tr>
+                      <td>Грим</td>
+                      <td>10999</td>
+                    </tr>
+                    <tr>
+                      <td>Макияж 1 зона</td>
+                      <td>4000</td>
+                    </tr>
+                    <tr>
+                      <td>Окрашивание бровей</td>
+                      <td>7899</td>
+                    </tr>
+                    <tr>
+                      <td>Окрашивание ресниц</td>
+                      <td>8000</td>
+                    </tr>
+                    <tr>
+                      <td>Коррекция бровей</td>
+                      <td>6799</td>
+                    </tr>
+                    <tr>
+                      <td>Наращивание ресниц</td>
+                      <td>15200</td>
+                    </tr>
+                    <tr>
+                      <td>Ламинирование бровей (Долговременная укладка бровей)</td>
+                      <td>11900</td>
+                    </tr>
+                    <tr>
+                      <td>Ламинирование ресниц</td>
+                      <td>15799</td>
+                    </tr>
+                    <tr>
+                      <td>Ботокс для бровей</td>
+                      <td>8000</td>
+                    </tr>
+                    <tr>
+                      <td>Ботокс для ресниц</td>
+                      <td>9799</td>
+                    </tr>
+                    <tr>
+                      <td>Осветление бровей</td>
+                      <td>8000</td>
+                    </tr>
+                    <tr>
+                      <td>Перманентный  макияж</td>
+                      <td>16990</td>
+                    </tr>
+                    <tr>
+                      <td>Депиляция верхней губы</td>
+                      <td>7600</td>
+                    </tr>
+                    </table>
+                </div>
+
+                </div>
+
+                <div style="display: flex; justify-content: center; align-items: center;">
+                  <button onclick="window.location='appointment.html'" class="first_b">Записаться к нам!</button>
+                </div>
+        </main>
+        <footer>
+            <div style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
+                <img src="image3.png" style="max-width: 30%;">
+            </div>
+            
+            <div class="contact_us">
+                <p>Свяжитесь с нами по телефону: <a href="tel:+74991234567" class="phone">+7-499-123-45-67</a> <img src="imgs/wa.png"></p>
+                <p>Напишите нам на почту: <a href="mailto:info@michele-beauty.com" style="text-decoration: none; color: white; font-size: 20px; font-weight: bold;">info@michele-beauty.com</a></p>
+                <p>Мы в социальных сетях:</p> 
+                <a href="https://www.instagram.com/" style="text-decoration: none;">
+                    <img src="imgs/inst.png">
+                </a>
+                <a href="https://vk.com/feed" style="text-decoration: none;">
+                    <img src="imgs/vk2.png">
+                </a>
+            </div>
+            
+            <div class="visit">
+                <a href="price.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: bold;">Услуги</a>
+                <a href="studio.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: bold;">Наши студии</a>
+                <a href="team.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: bold;">Наша команда</a>
+                <a href="appointment.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: bold;">Запись on-line</a>
+            </div>
+        </footer>
+        <script async> 
+          function openMenu() {
+              document.getElementById("sidebar").classList.toggle('active');
+          }
+      </script>
+</body>
+</html>

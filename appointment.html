@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_appointment.css">
+    <link rel="icon" href="favicon.ico"/>
+    <title>Салон красоты Michèle</title>
+</head>
+<body style = "background-color: rgb(255, 203, 229);">
+        <header id = "header" class = "main_header">
+            <div class ="center">
+            <div id = "phrase"><a href = "index.html" id = "title"><img src="image3.png" style="max-width: 100%;"></a></div>
+            <nav id="main_nav">
+                <ul>
+                    <li><a id="navi" href="price.html">Услуги</a></li>
+                    <li><a id="navi" href="studio.html">Наши студии</a></li>
+                    <li><a id="navi" href="team.html">Наша команда</a></li>
+                    <li><a id="navi" href="appointment.html">Запись on-line</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="openMenu()">
+                <div class="span_s">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div style="writing-mode: vertical-lr; font-size: 40px; font-family: Monotype Corsiva; margin-top: 20px; color: rgb(73, 73, 73)">Меню</div>
+            </div>
+            <ul>
+                <li><a href="price.html">Услуги</a></li>
+                <li><a href="studio.html">Наши студии</a></li>
+                <li><a href="team.html">Наша команда</a></li>
+                <li><a href="appointment.html">Запись on-line</a></li>
+            </ul>
+        </div>
+
+        <main>  
+            
+            <div class="pink"style="padding: 0; border: none; margin-top: 10px">
+                <div style="padding: 10px; border: none; display: flex; align-items: center; justify-content: flex-start;">
+                    <img src="white_circle.png ">
+                </div>
+                <div style="padding: 10px; border: none; display: flex; align-items: center; justify-content: center;">
+                    <h2 style="color: rgb(255, 255, 255); text-shadow: 1px 0px 1px rgb(0, 0, 0); font-size: 45px; text-align: center; font-family: Monotype Corsiva;">Записаться в салон</h2>
+                </div>
+                <div style="padding: 10px; border: none; display: flex; align-items: center; justify-content: flex-end;">
+                    <img src="white_circle_right.png">
+                </div>
+            </div>
+
+            <div class="container" style="background-image: url(imgs/fon2.png); padding-bottom: 20px;">
+            <div class="app_form">
+            <form class="decor">
+                <div class="form-left-decoration"></div>
+                <div class="form-right-decoration"></div>
+                <div class="circle"></div>
+                <div class="form-inner">
+                <h3>Запись в наш салон</h3>
+                <input class="gen" type="text" placeholder="Ваше ФИО">
+                <input class="gen" type="email" placeholder="Ваш Email">
+                <input class="gen" type="tel" placeholder="Ваш телефон">
+                <label for="fam"><h2>Студия:</h2></label>
+                <select name="fam">
+                <option value="married">Студия на Никольской</option>
+                <option value="single">Студия на Арбате</option>
+                <option value="divorced">Студия на Юго-Западной</option>
+                <option value="single">Студия на Авиационной</option></select>
+                <h2>Услуги</h2>
+                <textarea placeholder="На какие услуги Вы хотите записаться?" rows="4"></textarea>
+                    
+                <input onClick="alert('Вы успешно записались в нашу студию!')" class="gen" type="submit" value="Отправить">
+                </div>
+            </form>
+            </div>
+           
+            
+            </div> 
+            <section style="background: white">
+                <div style="padding: 20px; font-size: 20px; color: rgb(47,47,47); border: dotted 5px rgb(255, 203, 229); text-align: center;">
+                    Обращаем Ваше внимание на то, что в связи с текущей эпидемиологической ситуация посещение наших салонов возможно <b>только</b> в маске и перчатках!<br>Администратор нашей студии свяжется с Вами за день до визита. Если Вым необходимо отменить или изменить запись, свяжитесь с нами по телефону <a href="tel:+74991234567" style="text-decoration: none; color:rgb(47,47,47);">8-499-123-45-67</a>.
+            
+                </div>
+            </section>
+                
+        </main>
+
+        <footer>
+            <div style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
+                <img src="image3.png" style="max-width: 30%;">
+            </div>
+            
+            <div class="contact_us">
+                <p>Свяжитесь с нами по телефону: <a href="tel:+74991234567" class="phone">+7-499-123-45-67</a> <img src="imgs/wa.png"></p>
+                <p>Напишите нам на почту: <a href="mailto:info@michele-beauty.com" style="text-decoration: none; color: white; font-size: 20px; font-weight: bold;">info@michele-beauty.com</a></p>
+                <p>Мы в социальных сетях:</p> 
+                <a href="https://www.instagram.com/" style="text-decoration: none;">
+                    <img src="imgs/inst.png">
+                </a>
+                <a href="https://vk.com/feed" style="text-decoration: none;">
+                    <img src="imgs/vk2.png">
+                </a>
+            </div>
+            
+            <div class="visit">
+                <a href="price.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: bold;">Услуги</a>
+                <a href="studio.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: bold;">Наши студии</a>
+                <a href="team.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: bold;">Наша команда</a>
+                <a href="appointment.html" style="text-decoration: none; color: white; font-size: 20px; font-weight: bold;">Запись on-line</a>
+            </div>
+        </footer>
+        <script async>
+            function openMenu() {
+                document.getElementById("sidebar").classList.toggle('active');
+            }
+        </script>
+</body>
+</html>

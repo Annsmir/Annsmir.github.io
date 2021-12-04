@@ -1,0 +1,253 @@
+.numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+sup {
+    font-size: 1.5em;
+}
+
+.stud_num {
+    font-size: 30px; 
+    color:rgb(73, 73, 73); 
+    border-bottom: solid 1px white; 
+    padding: 10px;
+    margin-top: 40px
+}
+
+.emp_num {
+    font-size: 30px; 
+    color:rgb(73, 73, 73); 
+    border-top: solid 1px white; 
+    padding: 10px
+}
+
+.client_num {
+    font-size: 30px;
+    color:rgb(73, 73, 73); 
+    border-bottom: solid 1px white; 
+    padding: 10px;  
+    margin-top: 40px
+}
+
+@media (max-width: 1266px) {
+    .numbers {
+        flex-direction: column;
+    }
+
+    .stud_num {
+        border-bottom: solid 1px white; 
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .emp_num {
+        border-bottom: solid 1px white; 
+        border-top: none;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .client_num {
+        border: none;
+        text-align: center; 
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.employees_pics, .employees_info, .names {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.names {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    font-family: Monotype Corsiva;
+    color:rgb(73, 73, 73);
+
+}
+
+.img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.personal_info_teya, .personal_info_maria, .personal_info_misha, .personal_info_anna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:rgb(73, 73, 73);
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.personal_info_teya, .personal_info_maria, .personal_info_misha {
+    border-right: solid 2px rgb(255, 203, 229);
+}
+
+.display_small {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .display_wide {
+        display: none;
+    }
+
+    .display_small {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teya_small, .maria_small, .misha_small, .anna_small {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_small, .name_small {
+        display: flex;
+        justify-content: center;
+    }
+
+    .personal_info_teya_small, .personal_info_misha_small, .personal_info_anna_small, .personal_info_maria_small  {
+        text-align: center;
+    }
+
+    .name_small {
+        display: flex;
+        justify-content: space-around;
+        font-size: 30px;
+        font-family: Monotype Corsiva;
+        color:rgb(73, 73, 73);
+    
+    }
+
+    .personal_info_teya_small, .personal_info_maria_small, .personal_info_misha_small, .personal_info_anna_small {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: solid 2px rgb(255, 203, 229);
+    }
+}
+
+.promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#text_p {
+    margin: 20px;
+    align-items: center;
+    border: dotted 5px white;
+    padding: 15px;
+    font-size: 20px;
+
+}
+
+#image_p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media (max-width: 877px) {
+    .promo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: dotted 10px pink;
+    margin: 20px;
+}
+
+.location_t {
+    text-align: center;
+    font-size: 20px; 
+}
+
+.location_c {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+
+.phone_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-right: solid 2px rgb(255, 203, 229);
+}
+
+.mail_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-right: solid 2px rgb(255, 203, 229);
+}
+
+.visit_us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+@media (max-width: 899px) {
+    .location_c {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .phone_us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-right: none;
+        border-bottom: solid 2px rgb(255, 203, 229);
+    }
+    
+    .mail_us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-right: none;
+        border-bottom: solid 2px rgb(255, 203, 229);
+    }
+    
+    .visit_us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+}
